@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
-#library(DATA598WI20week5)
+library(DATA598WI20week5)
 library(tidyverse)
 ```
 
@@ -33,4 +33,5 @@ As ever, for more examples see @Makarius1970 or @Bintliff1993.
 
 ```{r reading-chunks}
 knitr::read_chunk("w5_chunk_to_read.r")
+#Just reading, not using the chunk...
 ```
