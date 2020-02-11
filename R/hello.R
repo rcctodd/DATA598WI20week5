@@ -1,6 +1,6 @@
 # Hello, world!
 #
-# This is an example function named 'hello' 
+# This is an example function named 'hello'
 # which prints 'Hello, world!'.
 #
 # You can learn more about package authoring with RStudio at:
@@ -16,3 +16,11 @@
 hello <- function() {
   print("Hello, world!")
 }
+usethis::use_mit_license("Ben Marwick")
+usethis::use_version(which = "3.6.0")
+
+usethis::use_package("dplyr",
+                      type = "Imports",
+                      min_version = "0.8.4")
+
+
