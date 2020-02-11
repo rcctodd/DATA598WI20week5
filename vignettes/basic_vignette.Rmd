@@ -1,0 +1,36 @@
+---
+title: "basic_vignette"
+output:
+  bookdown::html_document2:
+    base_format: rmarkdown::html_vignette
+bibliography: sage_dioa18_44.bib
+vignette: >
+  %\VignetteIndexEntry{basic_vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r open, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(DATA598WI20week5)
+library(dplyr)
+```
+
+```{r starwars-plot, fig.cap = "Fig. 1: Star Wars character mass vs height", fig.width=3.5, fig.height=3.5, cache=TRUE, message=FALSE}
+ggplot(starwars,aes(x=height,y=mass)) + geom_point()
+
+```
+
+Once again, I encourage all readers to look at Figure \@ref(fig:starwars-plot)!
+
+As ever, for more examples see @Makarius1970 or @Bintliff1993.
+
+```{r reading-chunks}
+knitr::read_chunk("w5_chunk_to_read.r")
+```
