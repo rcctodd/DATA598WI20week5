@@ -18,8 +18,8 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
-library(DATA598WI20week5)
-library(dplyr)
+#library(DATA598WI20week5)
+library(tidyverse)
 ```
 
 ```{r starwars-plot, fig.cap = "Fig. 1: Star Wars character mass vs height", fig.width=3.5, fig.height=3.5, cache=TRUE, message=FALSE}
